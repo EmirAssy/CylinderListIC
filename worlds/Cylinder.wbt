@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.815585722975001 0.5584128969986425 0.15164090788744394 5.898005549268242
-  position -0.549159116383063 0.9293400799103443 3.5059950337027272
+  orientation 0.9991190630772511 -0.040758646323356476 -0.009991523683786247 5.801981221106613
+  position -0.16559156031004363 3.844002711440515 5.051369235972333
 }
 TexturedBackground {
 }
@@ -60,6 +60,7 @@ DEF CYL4 Solid {
   children [
     Shape {
       appearance PBRAppearance {
+        baseColor 0.8 0 0
       }
       geometry DEF G_CYL4 Cylinder {
         height 0.35
@@ -68,4 +69,78 @@ DEF CYL4 Solid {
     }
   ]
   name "solid(3)"
+}
+DEF C5 Solid {
+  translation 0.3 0.125 0
+  children [
+    Shape {
+      appearance USE A_1
+      geometry USE G_CYL2
+    }
+  ]
+  name "solid(4)"
+}
+DEF C6 Solid {
+  translation 0.6 0.15 -0.3
+  children [
+    Shape {
+      appearance USE A_2
+      geometry USE G_CYL3
+    }
+  ]
+  name "solid(5)"
+}
+DEF C7 Solid {
+  translation 0.9 0.175 -0.6
+  children [
+    Shape {
+      appearance USE A_3
+      geometry USE G_CYL4
+    }
+  ]
+  name "solid(6)"
+}
+DEF C8 Solid {
+  translation 0.6 0.15 0
+  children [
+    Shape {
+      appearance USE A_1
+      geometry USE G_CYL3
+    }
+  ]
+  name "solid(7)"
+}
+DEF C9 Solid {
+  translation 0.9 0.175 -0.3
+  children [
+    Shape {
+      appearance USE A_2
+      geometry USE G_CYL4
+    }
+  ]
+  name "solid(8)"
+}
+DEF C10 Solid {
+  children [
+    Shape {
+    }
+  ]
+  name "solid(9)"
+}
+DEF C11 Solid {
+  translation 0 0.1 -0.3
+  children [
+    Shape {
+      appearance USE A_2
+      geometry USE G_CYL1
+    }
+  ]
+  name "solid(10)"
+}
+DEF C12 Solid {
+  children [
+    Shape {
+    }
+  ]
+  name "solid(11)"
 }
